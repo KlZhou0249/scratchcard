@@ -4,9 +4,33 @@
         <meta charset='utf-8'>
         <title>开心刮刮乐</title>
         <meta name='viewport' content='width=device-width, intial-scale=1.0'>
+        <style type='text/css'>
+            @keyframes bgchange{
+                0%{
+                    background-color: lightgreen;
+                }
+                25%{
+                    background-color: blue;
+                }
+                50%{
+                    background-color: orange;
+                }
+                75%{
+                    background-color: red;
+                }
+                100%{
+                    background-color: yellow
+                }
+            }
+
+            h1#title{
+                animation: bgchange 5s infinite alternate;
+                width: 320px;
+            }
+        </style>
     </head>
     <body>
-        <h1>你今天足够幸运吗？</h1>
+        <h1 id='title'>你今天足够幸运吗？</h1>
         <canvas></canvas>
         <script src=scratchcard.js></script>
     </body>
